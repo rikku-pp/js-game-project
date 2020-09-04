@@ -1,0 +1,10 @@
+.player-container {
+  z-index: 6;
+  top: 50% !important;
+  left: 50% !important;
+  pointer-events: none;
+}
+
+.player-container > * {
+  pointer-events: all;
+}

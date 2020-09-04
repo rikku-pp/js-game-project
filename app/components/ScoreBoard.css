@@ -1,0 +1,139 @@
+.scoreboard-container {
+  opacity: 1;
+}
+.scoreboard-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.scoreboard-position {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 15%;
+  bottom: 15%;
+  display: inline-block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.scoreboard-position::-webkit-scrollbar {
+  display: none;
+}
+.scoreboard-heading p {
+  font-size: 2rem;
+  font-family: 'Galindo', cursive;
+  font-weight: 500;
+  line-height: 2.2rem;
+  padding: 0;
+  margin: 0;
+}
+.scoreboard-item {
+  margin: 3px 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media screen and (max-width: 599px) {
+  .scoreboard-item {
+    font-size: 12px;
+  }
+}
+.scoreboard-item > .number {
+  font-style: italic;
+  font-weight: bold;
+  padding: 0 3px 3px 0;
+}
+
+.scoreboard-round > u {
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.scoreboard-round > .scoreboard-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.scoreboard-round > .scoreboard-item > .name {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 75px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+.name.chat-link:hover {
+  text-decoration: underline;
+  color: navy;
+  cursor: pointer;
+}
+
+.scoreboard-round > .scoreboard-item .icon > img {
+  width: 14px;
+  height: 14px;
+}
+
+.scoreboard-round > .scoreboard-item .icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.scoreboard-round > .scoreboard-item .icon.hidden {
+  display: none;
+}
+
+.scoreboard-round > .scoreboard-item .icon:hover {
+  background-color: #fff6;
+  cursor: pointer;
+}
+
+.scoreboard-round > .scoreboard-item .icon:active {
+  background-color: #fffc;
+}
+
+.scoreboard-round > .scoreboard-item > .number {
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+}
+.scoreboard-rounds-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.scoreboard-round {
+  border: 1px solid black;
+  padding: 2px;
+  margin: 0 15px 10px 0;
+  width: 225px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.scoreboard-heading hr {
+  border: 1px solid black;
+}
+.scoreboard-exit {
+  float: right;
+}
+.scoreboard-exit {
+  padding: 3px;
+}
+.scoreboard-exit > span {
+  display: none;
+}
+.scoreboard-exit > img:hover {
+  box-shadow: 0px 0px 3px 0px black;
+}
+.scoreboard-exit > img:active {
+  box-shadow: 0px 0px 5px 2px black;
+}
+.scoreboard-exit > img {
+  cursor: pointer;
+  width: 100%;
+}

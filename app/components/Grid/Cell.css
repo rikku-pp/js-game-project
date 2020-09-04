@@ -1,0 +1,50 @@
+.grid-cell {
+  background-image: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fbg.gif?v=1590534731789');
+  text-align: center;
+  border: 1px solid black;
+}
+.grid-cell:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.grid-cell:hover:active {
+  background-color: #fff;
+}
+
+.grid-cell.locked,
+.grid-cell.locked:hover,
+.grid-cell.locked:hover:active {
+  cursor: default;
+  background-color: unset;
+}
+.grid-cell.waiting,
+.grid-cell.waiting:hover,
+.grid-cell.waiting:hover:active {
+  cursor: default;
+  background-color: unset;
+  opacity: 0.3;
+}
+
+.grid-cell.submitted,
+.grid-cell.submitted:hover,
+.grid-cell.submitted:hover:active {
+  background-image: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fbg-check.gif?v=1590534731878');
+  background-color: #6b4;
+  cursor: default;
+}
+
+.grid-cell.submitted.incorrect,
+.grid-cell.submitted.incorrect:hover,
+.grid-cell.submitted.incorrect:hover:active {
+  background-image: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fbg-quilt.gif?v=1590534732010');
+  background-color: #f8a;
+  cursor: default;
+}
+
+.grid-cell.clued,
+.grid-cell.clued:hover,
+.grid-cell.clued:hover:active {
+  background-image: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fbg-stripe.gif?v=1590534732050');
+  background-color: #cb4;
+  cursor: default;
+}

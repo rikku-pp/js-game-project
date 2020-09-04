@@ -1,0 +1,49 @@
+.mark-button-container {
+  display: flex;
+  flex-direction: row;
+}
+.mark-button {
+  cursor: pointer;
+  width: 35px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  background-image: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fbg.gif?v=1590534731789');
+  border-radius: 2px;
+  border: 1px solid black;
+  margin: 1vh 2vw 4vh 2vw;
+}
+.mark-button:active {
+  background-color: #ffff;
+}
+.mark-button.selected {
+  background-color: #fffa;
+}
+
+@media screen and (orientation: landscape) {
+  .mark-button-container {
+    flex-direction: column;
+    margin: 0.5vh 1vw;
+  }
+  .mark-button {
+    width: 26px;
+    height: 35px;
+    line-height: 35px;
+  }
+}
+@media screen and (min-width: 600px) and (min-height: 600px) {
+  .mark-button {
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 3px;
+    border: 2px solid black;
+  }
+}
+@media screen and (orientation: landscape) and (min-height: 600px) {
+  .mark-button {
+    width: 35px;
+    height: 50px;
+    line-height: 50px;
+  }
+}

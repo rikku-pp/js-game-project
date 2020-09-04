@@ -1,0 +1,77 @@
+#grid-spy-container {
+  pointer-events: none;
+}
+.grid-spy {
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.1s 0.4s;
+  pointer-events: none;
+}
+.grid-spy.hidden {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.grid-spy.hidden * {
+  pointer-events: none;
+}
+
+.grid-spy > .grid > .grid-cell.submitted {
+  background-image: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fbg-check.gif?v=1590534731878');
+  background-color: #6b4d;
+}
+.grid-spy > .grid > .grid-cell.clued {
+  background-image: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fbg-stripe.gif?v=1590534732050');
+  background-color: #cb4d;
+}
+.grid-spy > .grid > .grid-cell.incorrect {
+  background-image: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fbg-quilt.gif?v=1590534732010');
+  background-color: #f8ad;
+}
+
+.grid-spy-close {
+  pointer-events: all;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  box-shadow: inset -3px -4px 1px 0 #3333;
+  font-family: Galindo;
+  font-weight: 100;
+  color: #333;
+  text-align: center;
+  z-index: 1;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-spy-close {
+    right: -24px;
+    top: -24px;
+    width: 48px;
+    height: 48px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-spy-close {
+    right: -32px;
+    top: -32px;
+    width: 64px;
+    height: 64px;
+    font-size: 48px;
+  }
+}
+
+.grid-spy-close:hover {
+  color: #000;
+}
+.grid-spy-close:active {
+  border-color: #333;
+  box-shadow: inset -3px -4px 1px 0 #eee6, inset 3px 4px 1px 0 #3333;
+}

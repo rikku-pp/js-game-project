@@ -1,0 +1,62 @@
+{
+  "StartButton": {
+    "label": "Start Game",
+    "color": "Yellow",
+    "backgroundColor": "Olive",
+    "tip": "There are not enough players"
+  },
+  "ClueButton": {
+    "label": "Clue Request",
+    "color": "Cyan",
+    "backgroundColor": "SteelBlue",
+    "tip": "Q-Mark at least one square to request clue"
+  },
+  "DesignStartButton": {
+    "label": "Design Next",
+    "color": "Yellow",
+    "backgroundColor": "Olive",
+    "tip": "Soon it's your turn to design pattern"
+  },
+  "ExamineButton": {
+    "label": "Examine Pattern",
+    "color": "Pink",
+    "backgroundColor": "DarkMagenta",
+    "tip": "Fill the grid first, then turn in solution"
+  },
+  "LeaveButton": {
+    "label": "Leave Game",
+    "color": "LightSalmon",
+    "backgroundColor": "SaddleBrown",
+    "tip": "Leave the game session"
+  },
+  "EndButton": {
+    "label": "End Game",
+    "color": "LightSalmon",
+    "backgroundColor": "Maroon",
+    "tip": "End the entire game session"
+  },
+  "FinalizeButton": {
+    "label": "Finalize Pattern",
+    "color": "GreenYellow",
+    "backgroundColor": "DarkSlateGray",
+    "tip": "Fill the grid first, then finalize the pattern"
+  },
+  "ScoreButton": {
+    "label": "Score Board",
+    "color": "Cyan",
+    "backgroundColor": "SteelBlue",
+    "tip": "View scores"
+  },
+  "ProceedButton": {
+    "label": "Proceed Game",
+    "color": "Yellow",
+    "backgroundColor": "Olive",
+    "tip": "There are not enough active players to begin next round"
+  },
+  "NextButton": {
+    "label": "Design Next",
+    "color": "Yellow",
+    "backgroundColor": "Olive",
+    "tip": ""
+  }
+}

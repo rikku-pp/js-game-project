@@ -1,0 +1,62 @@
+.player-item-container {
+  position: relative;
+  width: 0;
+}
+.player-item-container.inactive {
+  opacity: 0.15;
+  pointer-events: none;
+}
+.player-item-container.inactive .player-sub-item-container {
+  display: none;
+}
+.player-item-container > div {
+  position: absolute;
+}
+
+.avatar-container {
+  z-index: 3;
+}
+
+.avatar:hover + .select-random {
+  display: inline;
+}
+@media (hover: none) {
+  .avatar:hover + .select-random {
+    display: none;
+  }
+}
+
+.player-sub-item-container {
+  z-index: 2;
+}
+
+.player-sub-item-container > div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.player-sub-item-container > div.selected {
+  background-color: #fff6;
+}
+.player-sub-item-container > div:hover {
+  background-color: #fff6;
+}
+.player-sub-item-container > div:active {
+  background-color: #fffc;
+}
+
+.player-sub-item-container > div > img {
+  width: 50%;
+  height: 50%;
+  pointer-events: none;
+}
+
+.player-sub-item-container > div > img.top {
+  transform: scale(-1, -1);
+}
+.player-sub-item-container > div > img.right,
+.player-sub-item-container > div > img.bottom {
+  transform: scale(-1, 1);
+}

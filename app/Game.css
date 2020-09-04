@@ -1,0 +1,31 @@
+:root {
+  --theme-bg: linear-gradient(to right, #7ba2ac, #90ccdb);
+  --avatar-size: 60px;
+}
+
+#root,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+
+  background: var(--theme-bg);
+}
+
+/* *,
+*::after,
+*::before {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+} */
+
+#root > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

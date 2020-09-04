@@ -1,0 +1,113 @@
+.reg-container {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  animation: fade_in 0.7s 1;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  position: relative;
+}
+
+label > span {
+  z-index: 5;
+  pointer-events: none;
+}
+label .avatar {
+  z-index: 6;
+}
+
+.select-random {
+  position: absolute;
+  bottom: 50%;
+  top: 50%;
+  z-index: 6;
+  font-family: 'Galindo', cursive;
+  font-weight: 700;
+  display: none;
+  pointer-events: none;
+}
+
+.select-random.white {
+  color: black;
+}
+.select-random.black {
+  color: white;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-input {
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 400;
+  text-align: center;
+  resize: none;
+  outline: none;
+  background-color: #fff0;
+  border: none;
+  padding: 10px 80px 10px 80px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.text-input-svg {
+  position: absolute;
+  z-index: 4;
+}
+.text-input-svg path {
+  cursor: text;
+  fill: #ccc;
+}
+.text-input-svg path:hover {
+  fill: #ddd;
+}
+
+.create-button {
+  cursor: pointer;
+  background-color: olive;
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  color: yellow;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -3px 4px 1px 0 #3333;
+}
+.create-button:focus {
+  outline: none;
+}
+.create-button:active {
+  transform: translate(-3px, 4px);
+  box-shadow: unset;
+}

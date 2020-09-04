@@ -1,0 +1,18 @@
+.welcome-container {
+  height: 100vh;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.welcome-header {
+  font-size: 3rem;
+  font-family: 'Galindo', cursive;
+  font-weight: 700;
+  text-align: center;
+}
+
