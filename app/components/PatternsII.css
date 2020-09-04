@@ -1,0 +1,24 @@
+.patterns-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.patterns-container.interactive {
+  pointer-events: all;
+}
+
+.bring-to-front {
+  z-index: 6;
+}
+.click-transparent {
+  pointer-events: none;
+}
+
+@media screen and (orientation: landscape) {
+  .patterns-container {
+    flex-direction: row;
+  }
+}

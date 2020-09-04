@@ -1,0 +1,7 @@
+.player-name {
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 9px;
+  display: flex;
+  z-index: 1;
+}

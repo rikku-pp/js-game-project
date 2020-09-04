@@ -1,0 +1,14 @@
+{
+  "ChatMessageMaxLength": 1989,
+  "PlayerNameMaxLength": 40,
+  "AvatarSizes": {
+    "SMALL": 40,
+    "MEDIUM": 60,
+    "LARGE": 80
+  },
+  "Breakpoints": {
+    "SMALL": 300,
+    "MEDIUM": 600,
+    "LARGE": 1024
+  }
+}

@@ -1,0 +1,94 @@
+.grid-dialogue {
+  padding: 3% 0;
+  min-height: 25%;
+  max-height: 25%;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container > div > .grid > div.grid-cell {
+  font-size: medium;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container > div > .grid > div.grid-cell {
+    font-size: small;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .grid-container > div > .grid > div.grid-cell {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .grid-container > div > .grid > div.grid-cell {
+    font-size: 6px;
+  }
+}
+
+.grid-dialogue > .grid-container {
+  height: 95%;
+  max-height: 95%;
+  width: 40%;
+}
+
+.grid-dialogue > .grid-container > div {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.grid-title {
+  position: absolute;
+  top: -20px;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-title {
+    top: 103%;
+  }
+}
+
+.grid-dialogue > .grid-container > div > .grid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.grid-dialogue > .grid-container > div > .grid.blank {
+  opacity: 0.35;
+}
+
+.grid-dialogue > .grid-container-separator {
+  padding: 2%;
+}
+
+.grid-dialogue > .grid-container > div > .grid > .grid-cell {
+  opacity: 0.95;
+}
+.grid-dialogue > .grid-container > div > .grid > .grid-cell.submitted {
+  background-color: #6b4d;
+}
+.grid-dialogue > .grid-container > div > .grid > .grid-cell.clued {
+  background-color: #cb4d;
+}
+.grid-dialogue > .grid-container > div > .grid > .grid-cell.incorrect {
+  background-color: #f8ad;
+}

@@ -1,0 +1,27 @@
+.grid {
+  touch-action: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: stretch;
+  align-items: stretch;
+  border: 2px solid black;
+  box-shadow: -3px 4px 1px 0 #3333;
+}
+
+.grid-spy > .grid.blank {
+  opacity: 0.35;
+}
+
+.grid.square > .grid-cell:hover {
+  cursor: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fsquare.png?v=1590534731495'), auto;
+}
+.grid.circle > .grid-cell:hover {
+  cursor: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fcircle.png?v=1590534732315'), auto;
+}
+.grid.diamond > .grid-cell:hover {
+  cursor: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fdiamond.png?v=1590534732461'), auto;
+}
+.grid.plus > .grid-cell:hover {
+  cursor: url('https://cdn.glitch.com/48c3bf36-f420-4677-bb7d-c1924b566f33%2Fplus.png?v=1590534732588'), auto;
+}

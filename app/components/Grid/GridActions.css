@@ -1,0 +1,40 @@
+.grid-action-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media screen and (orientation: landscape) {
+  .grid-action-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+}
+
+.button-container {
+  margin: 10px 15px;
+  text-align: center;
+}
+.button-container.invisible {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.divider {
+  flex: 0;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .button-container {
+    margin: 15px 25px;
+  }
+  .divider {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}

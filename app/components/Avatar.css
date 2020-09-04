@@ -1,0 +1,30 @@
+.avatar {
+  box-sizing: content-box;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.avatar-container.inactive > .avatar {
+  cursor: default;
+}
+
+.avatar > div {
+  border-radius: 50%;
+  border: 2px solid #aaa6;
+}
+.avatar:hover > div {
+  border-color: #000a;
+}
+
+.avatar:active > div {
+  border: 2px solid #aaa6;
+}
+
+.avatar-container.inactive > .avatar:hover > div,
+.avatar-container.inactive > .avatar:active > div {
+  border: 2px solid #aaa6;
+}
